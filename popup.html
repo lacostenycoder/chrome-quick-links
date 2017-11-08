@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Shortcuts</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Shortcuts</h1>
+    <form name="myForm" id="form1">
+
+        <div>
+            <label for="shortcut">SHORTCUT</label>
+            <input class="input" type="shortcut" id="shortcut" name="shortcut" />
+        </div>
+        <br/>
+        <div>
+            <label for="name">URL <button id="grab"> Grab </button></label>
+            <input class="input" type="text" id="url" name="url" />
+        </div>
+        <br/>
+        <div>
+            <input type="button" value="Go" id="myform">
+            <span><button id="show-links">Show All</button></span>
+        </div>
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>

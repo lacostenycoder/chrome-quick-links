@@ -1,0 +1,41 @@
+body {
+	background-color: #567;
+	color: #fff;
+}
+
+a, a:hover, a:visited, u {
+	/* color: #fff; */
+	text-decoration: none !important;
+}
+
+.url {
+	margin-left: 10px;
+}
+
+.text-xs {
+	font-size: 1em !important;
+	padding: 1px;
+	cursor: pointer;
+}
+
+label {
+	margin: 4px;
+}
+
+input {
+	margin-top: 4px;
+}
+
+.tb {
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+@media (min-width: 800px) {
+	input.wide {
+		width: 400px !important;
+		max-width: 400px !important;
+	}
+}
