@@ -11,7 +11,8 @@
     "default_title": "Enter Shortcut"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
 
   "web_accessible_resources": [
