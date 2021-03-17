@@ -8,37 +8,57 @@
   <body>
     <div class="container">
       <h1>Web Text Shortcuts</h1>
-      <p> Type characters to add or edit a shortcut. Add a url to add a new shortcut
+      <div class="col-sm-10"> Type characters to add or edit a shortcut. Add a url to add a new shortcut
           or overwrite an existing one.
-      </p>
-
-      <form name="myForm" id="form1">
-        <div>
-            <label for="shortcut">SHORTCUT</label>
-            <input class="input" type="shortcut" id="shortcut" name="shortcut" />
-        </div>
-        <br/>
-        <div>
-            <label for="name">URL:</label>
-            <input class="input wide" type="text" id="url" name="url" />
-        </div>
-        <br/>
-        <div>
-            <input type="button" value="Go" id="myform">
-        </div>
-      </form>
-      <hr>
-      <p class="lead">My Saved Shortcuts</p>
+          <br/>
+          Press GO to save and open url
+          <p>
+          </p>
+      </div>
+      <div class="col-sm-6">
+        <form name="myForm" id="form1">
+          <div>
+              <label for="shortcut">SHORTCUT</label>
+              <input class="input" type="shortcut" id="shortcut" name="shortcut" />
+          </div>
+          <br/>
+          <div>
+              <label for="name">URL:</label>
+              <input class="input wide" type="text" id="url" name="url" />
+          </div>
+          <br/>
+          <div>
+              <input type="button" value="Go" id="myform">
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6 pull-right">
+          <div class="col-sm-3 pull-right coffee text-center">
+            Click to buy us a coffee if you love this!
+            <br/>
+          </div>
+          <div class="col-sm-3 pull-right" tyle="padding-left: 100px">
+            <!-- <a target='_blank' href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MFEFPZSAC67QW'> -->
+            <a target='_blank' href='https://www.buymeacoffee.com/lacostenycoder'>
+              <image src="https://img.buymeacoffee.com/api/?name=lacostenycoder&size=100&bg-image=bmc&background=ff813f" border="0">
+              <!-- https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif -->
+            </a>
+          </div>
+      </div>
+      <div class="col-sm-12">
+        <label for="search"> Search URL</label>
+        <input id="search" type="text" placeholder="search url">
+      </div>
+      <div class="col-sm-12 lead">
+          My Saved Shortcuts
+      </div>
       <div class="saved-links">
           <div id="ul-links"></div>
-      </div>
-      <div>
-        <input id="search" type="text" placeholder="search url">
       </div>
       <table class="table table-striped">
         <thead>
           <tr>
-            <!-- <th>Control</th> -->
+            <th>Action</th>
             <th>Shortcut</th>
             <th>URL</th>
           </tr>
@@ -52,8 +72,8 @@
                     <span class="btn-mini btn-danger btn-inline text-xs">Delete</span>
                   </span>
                 </small>
-                example
               </td>
+              <td class="table-shortcut">example</td>
               <td>http://www.example.com</td>
             </tr>
         </tbody>
@@ -61,5 +81,14 @@
     </div>
     <script src="popup.js"></script>
     <script src="list.js"></script>
+
+
   </body>
 </html>
+
+<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MFEFPZSAC67QW">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form> -->

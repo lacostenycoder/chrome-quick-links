@@ -33,6 +33,20 @@ input {
 	border-radius: 4px;
 }
 
+.coffee {
+	margin-right: 100px;
+	margin-top: 12px;
+	color: #FFF;
+	background-color: #47BAC1;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+td.table-shortcut {
+  width: 20px !important;
+}
+
 @media (min-width: 800px) {
 	input.wide {
 		width: 400px !important;
