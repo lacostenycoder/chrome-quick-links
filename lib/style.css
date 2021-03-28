@@ -43,8 +43,23 @@ input {
 	padding-bottom: 10px;
 }
 
+.url-input {
+	margin-left: 50px;
+}
+.search-input {
+	margin-left: 36px;
+}
+
 td.table-shortcut {
   width: 20px !important;
+}
+
+#table-body {
+	max-width: 80% !important;
+}
+
+#form1 {
+	margin-top: 18px;
 }
 
 @media (min-width: 800px) {

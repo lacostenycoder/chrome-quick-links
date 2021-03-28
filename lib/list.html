@@ -7,13 +7,13 @@
   </head>
   <body>
     <div class="container">
-      <h1>Web Text Shortcuts</h1>
-      <div class="col-sm-10"> Type characters to add or edit a shortcut. Add a url to add a new shortcut
+      <div class="col-sm-12">
+        <h1>Web Text Shortcuts</h1>
+      </div>
+      <div class="col-sm-12">Type characters to add or edit a shortcut. Add a url to add a new shortcut
           or overwrite an existing one.
           <br/>
           Press GO to save and open url
-          <p>
-          </p>
       </div>
       <div class="col-sm-6">
         <form name="myForm" id="form1">
@@ -22,14 +22,11 @@
               <input class="input" type="shortcut" id="shortcut" name="shortcut" />
           </div>
           <br/>
-          <div>
-              <label for="name">URL:</label>
+          <div class="url-input">
+              <label for="name">URL</label>
               <input class="input wide" type="text" id="url" name="url" />
           </div>
           <br/>
-          <div>
-              <input type="button" value="Go" id="myform">
-          </div>
         </form>
       </div>
       <div class="col-sm-6 pull-right">
@@ -44,39 +41,44 @@
         </a>
       </div>
       <div class="col-sm-12">
-        <label for="search"> Search URL</label>
-        <input id="search" type="text" placeholder="search url">
+        <label class="search-input" for="search"> Search</label>
+        <input id="search" type="text" placeholder="search">
+        <input type="button" value="Go" id="myform">
       </div>
       <div class="col-sm-12 lead">
-          My Saved Shortcuts
+        <hr>
+          <h4>
+            My Saved Shortcuts
+          </h4>
       </div>
       <div class="saved-links">
           <div id="ul-links"></div>
       </div>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Action</th>
-            <th>Shortcut</th>
-            <th>URL</th>
-          </tr>
-        </thead>
-        <tbody id="table-body">
-            <tr id="example">
-              <td>
-                <small>
-                  <span class="btn-group">
-                    <span class="btn-mini btn-success btn-inline text-xs">Edit</span>
-                    <span class="btn-mini btn-danger btn-inline text-xs">Delete</span>
-                  </span>
-                </small>
-              </td>
-              <td class="table-shortcut">example</td>
-              <td>http://www.example.com</td>
+      <div class="col-sx-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Shortcut</th>
+              <th>URL</th>
             </tr>
-        </tbody>
-    </table>
-    </div>
+          </thead>
+          <tbody id="table-body">
+              <tr id="example">
+                <td>
+                  <small>
+                    <span class="btn-group">
+                      <span class="btn-mini btn-success btn-inline text-xs">Edit</span>
+                      <span class="btn-mini btn-danger btn-inline text-xs">Delete</span>
+                    </span>
+                  </small>
+                </td>
+                <td class="table-shortcut">example</td>
+                <td>http://www.example.com</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
     <script src="popup.js"></script>
     <script src="list.js"></script>
 
